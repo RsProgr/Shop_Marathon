@@ -18,6 +18,4 @@ public interface Shop {
     void printComputer();
 
     Computer updateComputer(long serialNumber, String brand);
-
-
 }
