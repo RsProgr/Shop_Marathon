@@ -2,13 +2,13 @@ package shop.model;
 
 import java.util.Objects;
 
-public class SmartPhone extends Computer{
+public class SmartPhone extends Computer {
 
     private String operationSystem;
     private boolean isSimCard;
 
-    public SmartPhone(long serialNumber, String cpu, int ram, int ssd, String brand, String operationSystem, boolean isSimCard) {
-        super(serialNumber, cpu, ram, ssd, brand);
+    public SmartPhone(long serialNumber, String cpu, int ram, int ssd, String brand, double originalPrice, double salePrice, String operationSystem, boolean isSimCard) {
+        super(serialNumber, cpu, ram, ssd, brand, originalPrice, salePrice);
         this.operationSystem = operationSystem;
         this.isSimCard = isSimCard;
     }
