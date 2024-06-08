@@ -8,13 +8,17 @@ public class Computer {
     private int ram;
     private int ssd;
     private String brand;
+    private double originalPrice;
+    private double salePrice;
 
-    public Computer(long serialNumber, String cpu, int ram, int ssd, String brand) {
+    public Computer(long serialNumber, String cpu, int ram, int ssd, String brand, double originalPrice, double salePrice) {
         this.serialNumber = serialNumber;
         this.cpu = cpu;
         this.ram = ram;
         this.ssd = ssd;
         this.brand = brand;
+        this.originalPrice = originalPrice;
+        this.salePrice = salePrice;
     }
 
     public long getSerialNumber() {
@@ -27,6 +31,22 @@ public class Computer {
 
     public String getCpu() {
         return cpu;
+    }
+
+    public double getOriginalPrice() {
+        return originalPrice;
+    }
+
+    public void setOriginalPrice(double originalPrice) {
+        this.originalPrice = originalPrice;
+    }
+
+    public double getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(double salePrice) {
+        this.salePrice = salePrice;
     }
 
     public void setCpu(String cpu) {
